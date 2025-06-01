@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #354a60, #45aaed);
+  height: 100vh;
+}
+
+.signupmain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.logo h1 {
+  font-size: 32px;
+  letter-spacing: 2px;
+  animation: animiup 0.5s ease-in-out;
+}
+
+.signupform {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  padding: 30px 25px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.25);
+  animation: animidown 1s ease-in-out;
+}
+
+@keyframes animiup {
+  from { opacity: 0; transform: translateY(0px); }
+  to { opacity: 1; transform: translateY(20px); }
+}
+@keyframes animidown {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0px); }
+}
+
+.signupform label {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.signupform input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.signupform input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.4);
+}
+
+.signupform button {
+  margin-top: 25px;
+  font-size: 15px;
+  background-color: #2ecc71;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signupform button:hover {
+  background-color: #27ae60;
+}
+
+.loginh1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.passreset{
+  display: flex;
+  justify-content: center;
+}
+.passreset p{
+  font-size: 14px;
+}
+.passreset :hover{
+  cursor: pointer;
+  color: #45aaed;
+  
+}
+
+.Warnmessagecon {
+  position: absolute;
+  top: 20px;
+  background-color: #e74c3c;
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 8px 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+  color: white;
+  animation: slideUp 0.1s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(0px); opacity: 0; }
+  to { transform: translateY(0px); opacity: 1; }
+}
+
+.Warnmessagecon p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.Warnmessagecon button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.Warnmessagecon button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
