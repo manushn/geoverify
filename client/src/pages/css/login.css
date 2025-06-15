@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #354a60, #45aaed);
   height: 100vh;
 }
 
@@ -12,6 +11,7 @@ body {
   align-items: center;
   height: 100vh;
   position: relative;
+  background: linear-gradient(135deg, #354a60, #45aaed);
 }
 
 .logo {

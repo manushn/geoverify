@@ -21,7 +21,10 @@ async function initialCheck() {
                     ID INT PRIMARY KEY IDENTITY(1,1),
                     username NVARCHAR(100) NOT NULL,
                     password NVARCHAR(100) NOT NULL,
-                    name NVARCHAR(200) NOT NULL
+                    name NVARCHAR(200) NOT NULL,
+                    role VarChar(7) NOT NULL,
+                    allowed_district VARCHAR(200) NOT NULL
+
                 );
             END
         `);
